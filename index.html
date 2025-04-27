@@ -6,8 +6,20 @@
     <title>Apuntes Javascript</title>
 </head>
 <body>
-    
-    
+<!-- TP FORMULARIO CON VALIDACIONES -->
+    <!-- id="registrarseForm"" en js poner registrarseForm.submit();-->
+    <form method="post" id="registrarseForm" onsubmit="return validarForm();">              
+        <div class="form-group">
+            <label for="nombre">Ingrese su nombre completo: </label>
+            <input type="text" id="nombre" class="form-control">
+            <button type="submit">Registrarse</button>
+        </div>
+    </form>
 
+<!-- TP NIVELACION -->
+    <button onclick="saludar()">Saludar</button>
+    <div id="ejercicio1"></div>
+
+<script src="script.js"> </script>
 </body>
 </html>
