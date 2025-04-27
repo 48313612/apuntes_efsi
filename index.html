@@ -17,8 +17,32 @@
     </form>
 
 <!-- TP NIVELACION -->
-    <button onclick="saludar()">Saludar</button>
-    <div id="ejercicio1"></div>
+<button onclick="saludar()">Saludar</button>
+<div id="ejercicio1"></div>
+
+<!-- TP CALCULADORA -->
+<form id="form" class="form">
+    <div class="form-group">
+        <label for="num1">Ingrese un número: </label>
+        <!-- llama a la función cada vez que el usuario escribe algo en tiempo real -->
+        <input type="text" id="num1" oninput="calculadora()">
+    </div>
+    <button type="button" onclick="calcular()">Calcular</button>
+        <div role="alert" id="alertaVerde" style="display: none;"> </div>
+        <div id="alertaRojo" style="display: none;"> </div>
+</form>
+
+<!-- TP 1 BIS -->
+<div class="form-group">
+    <label for="notaMatematica">Ingrese la nota de matemática: </label>
+    <input type="text" id="notaMatematica" class="form-control" oninput="validarForm()">
+</div>
+<button type="button" onclick="mostrarMayorNota()">Mostrar la materia con mayor nota</button>
+<div class="alert alert-primary" role="alert" id="alertaAzul" style="display: none;"> </div>
+
+
+
+<!-- TP TO DO LIST BIS -->
 
 <script src="script.js"> </script>
 </body>
