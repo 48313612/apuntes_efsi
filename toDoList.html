@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST PRACTICA</title>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <div class="controles">
+        <input type="text" id="entradaTarea">
+        <button onclick="agregarTarea()">Agregar tarea</button>
+        <button class="eliminar" onclick="eliminarCompletadas()">Eliminar completadas</button>
+        <select id="filtro" onchange="actualizarTareas()">
+            <option value="todas">Todas</option>
+            <option value="completadas">Completadas</option>
+            <option value="pendientes">Pendientes</option>
+        </select>
+        <button onclick="mostrarTareaMasRapida()">Tarea más rápida</button>
+    </div>
+    <div>
+        <ul id="listaTareas" class="list-group mt-3"></ul>
+    </div>
+<script src= "toDoList.js"> </script>
+</body>
+</html>
