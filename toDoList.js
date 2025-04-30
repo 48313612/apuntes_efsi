@@ -37,7 +37,7 @@ const eliminarCompletadas = () => {
     guardarYactualizar();
 };
 
-// si se hace sin localstorage ni json, esto no se usa
+// si se hace sin localstorage ni json, esto no se usa, y hay que direccionar directo a actualizarTareas()
 const guardarYactualizar = () => {
     localStorage.setItem('tareas', JSON.stringify(tareas)); // guarda el array como texto
     actualizarTareas();  // actualiza la lista visualmente
