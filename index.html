@@ -3,44 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apuntes Javascript</title>
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<!-- TP FORMULARIO CON VALIDACIONES -->
-    <!-- id="registrarseForm"" en js poner registrarseForm.submit();-->
-    <form method="post" id="registrarseForm" onsubmit="return validarForm();">              
-        <div class="form-group">
-            <label for="nombre">Ingrese su nombre completo: </label>
-            <input type="text" id="nombre" class="form-control">
-            <button type="submit">Registrarse</button>
-        </div>
-    </form>
 
-<!-- TP NIVELACION -->
-<button onclick="saludar()">Saludar</button>
-<div id="ejercicio1"></div>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
+<div class="context">
+    <h1>Hangman</h1>
 
-<!-- TP CALCULADORA -->
-<form id="form" class="form">
-    <div class="form-group">
-        <label for="num1">Ingrese un número: </label>
-        <!-- llama a la función cada vez que el usuario escribe algo en tiempo real -->
-        <input type="text" id="num1" oninput="calculadora()">
+    <div id="game">
+        <p id="wordDisplay">_ _ _ _ _</p>
+
+        <input type="text" id="letterInput" maxlength="1" placeholder="Ingresa una letra" />
+        <button id="guessButton">Adivinar</button>
+
+        <p>Errores: <span id="errorCount">0</span>/6</p>
+
+        <p>Letras usadas: <span id="usedLetters"></span></p>
+
+        <p id="message"></p>
+
+        <button id="restartButton">Reiniciar juego</button>
     </div>
-    <button type="button" onclick="calcular()">Calcular</button>
-        <div role="alert" id="alertaVerde" style="display: none;"> </div>
-        <div id="alertaRojo" style="display: none;"> </div>
-</form>
-
-<!-- TP 1 BIS -->
-<div class="form-group">
-    <label for="notaMatematica">Ingrese la nota de matemática: </label>
-    <input type="text" id="notaMatematica" class="form-control" oninput="validarForm()">
 </div>
-<button type="button" onclick="mostrarMayorNota()">Mostrar la materia con mayor nota</button>
-<div class="alert alert-primary" role="alert" id="alertaAzul" style="display: none;"> </div>
 
-<script src="script.js"> </script>
+    <script src="script2.js"></script>
 </body>
-</html>
+</html
