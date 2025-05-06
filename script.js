@@ -8,6 +8,9 @@ function validarForm() {
     if (contraseña.length >= 8 && tieneNum && tieneLetra && (contraseña === confirmarContraseña)) {
         contraseñaValida = true;
     }
+    if(tieneLetraMayuscula && tieneLetraMinuscula) {
+        console.log(mostrarLetra());
+    }
     // Comprobar validaciones
     if (!mailValido) { alert('error'); return false; }
     //submit valores ingresados
