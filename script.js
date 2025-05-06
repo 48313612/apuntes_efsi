@@ -3,6 +3,8 @@ function validarForm() {
     const mailValido = /^[a-z0-9]+@(gmail|hotmail|outlook)\.com$/.test(email);
     const tieneNum = /(?:\d)/.test(contraseña);
     const tieneLetra = /(?:[A-Z])/.test(contraseña) || /(?:[a-z])/.test(contraseña);
+    const tieneLetraMinuscula = ;
+    const tieneLetraMayuscula =
     if (contraseña.length >= 8 && tieneNum && tieneLetra && (contraseña === confirmarContraseña)) {
         contraseñaValida = true;
     }
